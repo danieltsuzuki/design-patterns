@@ -1,0 +1,19 @@
+package br.comestudo.loja.desconto;
+
+import java.math.BigDecimal;
+
+import br.comestudo.loja.orcamento.Orcamento;
+
+public abstract class Desconto {
+	
+	protected Desconto proximo;
+
+	public Desconto(Desconto proximo) {
+		super();
+		this.proximo = proximo;
+	}
+	
+	public abstract BigDecimal calcular(Orcamento orcamento);
+
+	
+}
