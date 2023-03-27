@@ -18,7 +18,7 @@ public class DescontoParaOrcamentoComMaisDeCincoItens extends Desconto{
 	public boolean deveAplicar(Orcamento orcamento) {
 		
 
-		return orcamento.getQuantidadeDeItens() > 5;
+		return orcamento.getQuantidadeItens() > 5;
 	}
 	
 }
